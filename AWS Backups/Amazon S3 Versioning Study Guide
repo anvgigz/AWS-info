@@ -1,0 +1,31 @@
+Amazon S3 Versioning Study Guide
+Glossary of Key Terms
+TermDefinition
+S3 Versioning A feature of Amazon S3 that allows you to keep multiple versions of an object in the same bucket.
+Version ID A unique identifier assigned to each version of an object.
+Delete Marker A special object version that indicates an object has been deleted.
+Unversioned Bucket A bucket where versioning is not enabled.Versioning-Enabled BucketA bucket where versioning is enabled, meaning all objects are versioned.
+Versioning-Suspended Bucket A bucket where versioning was previously enabled but has been suspended, meaning new objects are not versioned but old versions are retained.
+S3 Lifecycle A feature that allows you to define rules for automatically managing the lifecycle of objects in your buckets, such as transitioning them to different storage classes or deleting them after a certain period.
+Short Answer Quiz
+What is the primary purpose of enabling versioning in Amazon S3?
+What happens when you delete an object in a versioning-enabled bucket?
+Explain the difference between an unversioned bucket and a versioning-suspended bucket.
+How are objects handled in a versioning-suspended bucket?
+Describe the impact of versioning on storage costs.
+What is the significance of the version ID "null"?
+Why is it beneficial to use S3 Versioning with S3 Lifecycle?
+Can you revert a versioning-enabled bucket back to an unversioned state?
+What happens when multiple write requests are received for the same object in a versioning-enabled bucket?
+Which API does not support S3 Versioning?
+Short Answer Quiz Answer Key
+Enabling versioning in Amazon S3 allows you to keep multiple versions of an object in the same bucket, providing protection against accidental deletion or overwrites and facilitating data recovery.
+When you delete an object in a versioning-enabled bucket, a delete marker is inserted instead of permanently removing the object. This marker signifies the object's deletion, but previous versions remain accessible.
+An unversioned bucket has versioning disabled by default, meaning only the current version of an object is retained. A versioning-suspended bucket had versioning enabled previously, but it has been paused. Existing object versions are preserved, but new objects are not versioned.
+In a versioning-suspended bucket, existing object versions remain unchanged. However, new objects added to the bucket are not versioned and only the latest version is maintained.
+Versioning increases storage costs as each version of an object is stored and charged as a separate object. Having multiple versions of objects leads to higher storage consumption and expenses.
+The version ID "null" indicates that an object was stored in the bucket before versioning was enabled. These objects retain their null version ID even after versioning is activated.
+Using S3 Versioning with S3 Lifecycle allows for comprehensive data retention management. You can define rules to automatically transition object versions to different storage classes or delete them after a specific period, optimizing storage costs and data retention policies.
+No, once a bucket is version-enabled, it cannot revert to an unversioned state. However, you can suspend versioning to stop creating new object versions while preserving existing ones.
+When multiple write requests are received simultaneously for the same object in a versioning-enabled bucket, Amazon S3 stores all the submitted object versions, ensuring no data is lost.
+The SOAP API does not support S3 Versioning.
