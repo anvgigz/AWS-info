@@ -1,4 +1,7 @@
 AWS Databases Study Guide
+
+https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_GettingStarted.CreatingConnecting.MySQL.html#CHAP_GettingStarted.Creating.MySQL
+
 TermDefinition
 Amazon RDSA managed relational database service provided by AWS that simplifies the setup, operation, and scaling of relational databases.
 DB InstanceAn isolated database environment in the AWS Cloud, representing a single database server.
@@ -34,4 +37,5 @@ An AWS Region represents a geographical area containing multiple Availability Zo
 Multi-AZ deployments enhance availability by automatically provisioning standby replicas in different Availability Zones. This ensures automatic failover in case of primary instance failure, minimizes downtime, and enables data redundancy.
 Security Groups act as virtual firewalls, controlling inbound and outbound traffic to RDS instances. They allow you to define rules based on IP addresses, protocols, and ports, restricting access and enhancing the overall security posture.
 Amazon CloudWatch provides metrics and alarms for monitoring RDS performance, enabling tracking of key metrics like CPU utilization, database connections, and query latency. Additionally, Amazon RDS Performance Insights analyzes database load and identifies performance bottlenecks.
+
 Amazon RDS offers multiple user interfaces: the AWS Management Console, a web-based GUI, the AWS CLI for command-line interactions, and the Amazon RDS API for programmatic access and automation.
