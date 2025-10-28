@@ -1,0 +1,23 @@
+Briefing Doc: Amazon CloudWatch
+Main Themes:
+
+Real-time Monitoring: Amazon CloudWatch provides real-time monitoring of AWS resources and applications running on AWS.
+Metric Collection & Tracking: CloudWatch collects and tracks "metrics," which are measurable variables for resources and applications. This includes default metrics for AWS services and the ability to create custom metrics.
+Alerting & Automation: Users can create alarms that trigger notifications or automated actions (like launching new instances) when metric thresholds are breached.
+System-Wide Visibility: CloudWatch offers a comprehensive view of resource utilization, application performance, and operational health.
+Key Facts:
+
+Automatic Metric Display: The CloudWatch homepage automatically displays metrics for all AWS services in use.
+Customizable Dashboards: Users can create dashboards to display metrics for custom applications and specific collections of metrics.
+Integration with other AWS Services: CloudWatch integrates with services like Amazon SNS for notifications, Amazon EC2 Auto Scaling for dynamic scaling, and AWS CloudTrail for API call monitoring.
+Important Quotes:
+
+Core Functionality: "Amazon CloudWatch monitors your Amazon Web Services (AWS) resources and the applications you run on AWS in real time. You can use CloudWatch to collect and track metrics, which are variables you can measure for your resources and applications."
+Benefits: "With CloudWatch, you gain system-wide visibility into resource utilization, application performance, and operational health."
+Example Use Case: "For example, you can monitor the CPU usage and disk reads and writes of your Amazon EC2 instances and then use that data to determine whether you should launch additional instances to handle increased load. You can also use this data to stop under-used instances to save money."
+Accessing CloudWatch:
+
+AWS Management Console
+AWS CLI
+CloudWatch API
+AWS SDKs

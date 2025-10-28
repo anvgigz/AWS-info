@@ -1,0 +1,8 @@
+https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/GettingStarted.html
+
+Essay Questions
+Discuss the importance of monitoring in a cloud environment and explain how Amazon CloudWatch addresses these needs.
+Describe in detail how CloudWatch alarms function and provide specific examples of how they can be used to improve application reliability and performance.
+Explain the integration between CloudWatch and other AWS services like Amazon SNS, EC2 Auto Scaling, and CloudTrail. How do these services work together to create a comprehensive monitoring and management system?
+Analyze the role of CloudWatch in cost optimization strategies for AWS resources. Provide concrete examples of how CloudWatch data can be used to identify and address potential cost savings.
+Imagine you are tasked with setting up CloudWatch monitoring for a new application deployment on AWS. Describe the key steps you would take and the considerations you would make in designing a comprehensive monitoring strategy.

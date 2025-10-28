@@ -1,0 +1,32 @@
+Amazon CloudWatch Study Guide
+Glossary of Key Terms
+Amazon CloudWatch: A real-time monitoring service for AWS resources and applications.
+Metrics: Variables that are measured for resources and applications. CloudWatch collects and tracks these.
+Dashboards: Customizable visual displays of collected metrics.
+Alarms: Configuration rules that trigger actions based on metric thresholds, like sending notifications or scaling resources.
+Amazon SNS: Simple Notification Service, used to send messages or alerts triggered by CloudWatch alarms.
+Amazon EC2 Auto Scaling: A service that automatically adjusts the number of EC2 instances based on demand and policies. CloudWatch alarms can trigger scaling actions.
+AWS CloudTrail: A service that logs API calls made to your AWS account, providing an audit trail of activity. CloudWatch API calls are logged by CloudTrail.
+AWS Identity and Access Management (IAM): A service for managing user access and permissions for AWS resources, including CloudWatch.
+Short Answer Quiz
+What is the primary function of Amazon CloudWatch?
+Explain how CloudWatch uses "metrics" to monitor resources and applications.
+Describe the purpose of CloudWatch "dashboards".
+How do CloudWatch "alarms" work and what actions can they trigger?
+What role does Amazon SNS play in conjunction with CloudWatch?
+Explain how Amazon EC2 Auto Scaling can be integrated with CloudWatch.
+How does AWS CloudTrail contribute to monitoring CloudWatch activity?
+Why is AWS Identity and Access Management (IAM) important for CloudWatch security?
+List three different ways to access and interact with Amazon CloudWatch.
+Provide an example of how CloudWatch could be used to optimize costs on AWS.
+Short Answer Quiz Answer Key
+Amazon CloudWatch monitors AWS resources and applications in real-time, providing insights into their performance and operational health.
+CloudWatch collects "metrics", which are variables that measure different aspects of resources and applications. By tracking these metrics, CloudWatch can monitor performance, usage, and other key indicators.
+CloudWatch dashboards provide a visual way to display and organize collected metrics. Users can create custom dashboards to track the specific metrics they are interested in.
+CloudWatch "alarms" are rules that trigger actions when a specified metric crosses a defined threshold. These actions can include sending notifications, launching or terminating EC2 instances, or running custom scripts.
+Amazon SNS (Simple Notification Service) can be used to send notifications when CloudWatch alarms are triggered. This allows users to be alerted about important events in their AWS environment.
+CloudWatch alarms can be used to trigger Amazon EC2 Auto Scaling actions. For example, an alarm based on high CPU usage could trigger the launch of additional EC2 instances to handle the increased load.
+AWS CloudTrail logs all API calls made to AWS, including calls made to the CloudWatch API. This provides an audit trail of all CloudWatch activity, which can be used for security and compliance purposes.
+AWS IAM (Identity and Access Management) allows you to control which users have access to CloudWatch and what actions they are allowed to perform. This helps to ensure that only authorized users can access and manage your monitoring data.
+You can access Amazon CloudWatch through the AWS Management Console, the AWS Command Line Interface (CLI), and the CloudWatch API.
+CloudWatch can help optimize costs by monitoring resource utilization. For example, you could use CloudWatch to identify under-utilized EC2 instances and then stop or terminate them to save money.
